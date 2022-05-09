@@ -1,0 +1,12 @@
+screeningslip.regform:
+  title: Registration Form
+  route_name: screeningslip.regform
+  menu_name: 'main'
+  weight: 1
+
+
+screeningslip.reglist:
+  title: Registration List
+  route_name: screeningslip.reglist
+  menu_name: 'main'
+  weight: 2

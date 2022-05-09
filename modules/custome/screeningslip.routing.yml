@@ -1,0 +1,48 @@
+
+screeningslip.regform:
+  path: '/regform'
+  defaults:
+    _form:  '\Drupal\screeningslip\Form\RegForm'
+    _title: 'Registration form'
+  requirements:
+    _permission: 'access content'
+
+screeningslip.reglist:
+  path: '/reglist'
+  defaults:
+    _form:  '\Drupal\screeningslip\Form\RegListForm'
+    _title: 'Registration list'
+  requirements:
+    _permission: 'access content'
+
+screeningslip.regview:
+  path: '/regview/{id}'
+  defaults:
+    _controller: '\Drupal\screeningslip\Controller\DefaultController::regview'
+    _title: 'Registration view'
+  requirements:
+    _permission: 'access content'
+  options:
+    id: \s+
+
+screeningslip.regpdf:
+  path: '/regpdf/{id}'
+  defaults:
+    _controller: '\Drupal\screeningslip\Controller\DefaultController::regpdf'
+    _title: 'Registration pdf'
+  requirements:
+    _permission: 'access content'
+  options:
+    id: \s+
+
+screeningslip.regform_edit:
+  path: '/regform/{id}/edit'
+  options:
+    id: \d+
+  defaults:
+    _form:  '\Drupal\screeningslip\Form\RegForm'
+    _title: 'Registration form edit'
+  requirements:
+    _permission: 'access content'
+
+   

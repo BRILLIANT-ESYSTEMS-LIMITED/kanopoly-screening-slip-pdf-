@@ -1,1 +1,0 @@
-# kanopoly-screening-slip-pdf-
